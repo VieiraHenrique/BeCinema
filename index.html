@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="modal-placeholder">
+        <template id="template-movie-modal">
+            <div class="modal-bg">
+                <div class="modal-box">
+                    <div class="modal-box__infos">
+                        <div class="title">TITLE</div>
+                        <div class="year">2020</div>
+                        <div class="overview">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nisi
+                            libero reprehenderit saepe quae deleniti rem aliquam ullam.</div>
+                        <div class="genre">action - crime</div>
+                        <div class="cast"></div>
+                    </div>
+                    <div class="modal-box__video">
+
+                    </div>
+                    <div class="close"><i class="far fa-times-circle"></i></div>
+                </div>
+            </div>
+        </template>
+    </div>
+
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__logo">
+                <h1>Be<span>Cinema</span></h1>
+            </div>
+            <div class="nav__menu">
+                <ul>
+                    <li id="featured">Featured Movies</li>
+                    <li class="genres">Movies by genre
+                        <ul class="genres-sub-menu">
+                            <li id="comedy">Comedy</li>
+                            <li id="drama">Drama</li>
+                            <li id="romance">Romance</li>
+                            <li id="action">Action</li>
+                            <li id="fantasy">Fantasy</li>
+                            <li id="animation">Animation</li>
+                            <li id="horror">Horror</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <form id="search" action="">
+                            <input id="searchInput" type="text" placeholder="Search by title">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <template id="template-movie-box">
+            <div class="film-container">
+                <img src="" alt="">
+                <div class="infos">
+                    <h3 class="title">Title</h3>
+                    <h4 class="year">2020</h4>
+                    <p class="genre">Comedy</p>
+                    <p class="rating-container">
+                        <i class="fas fa-star"></i>
+                        <span class="rating"></span>
+
+                    </p>
+                </div>
+
+            </div>
+        </template>
+
+        <div id="displaySection">
+            <div class="section-title">
+                <h2>Let's movie it !</h2>
+
+            </div>
+            <div class="next-prev">
+                <p id="prev">Previous movies</p>
+                <p id="more">Next movies</p>
+            </div>
+
+            <div class="film-grid">
+
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
